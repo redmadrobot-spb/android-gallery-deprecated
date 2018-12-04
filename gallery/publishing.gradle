@@ -1,7 +1,7 @@
 apply plugin: 'com.jfrog.bintray'
 ext {
     gitUrl = "https://github.com/redmadrobot-spb/android-gallery-old.git"
-    projectName = 'android-gallery-old'
+    projectName = 'android-gallery-deprecated'
 }
 
 Properties properties = new Properties()
