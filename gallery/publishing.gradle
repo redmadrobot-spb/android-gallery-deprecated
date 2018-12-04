@@ -1,6 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 ext {
-    gitUrl = "https://github.com/redmadrobot-spb/android-gallery-old.git"
+    gitUrl = "https://github.com/redmadrobot-spb/android-gallery-deprecated.git"
     projectName = 'android-gallery-deprecated'
 }
 
