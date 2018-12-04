@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven-publish'
 
 android {
 
@@ -21,6 +22,8 @@ android {
     }
 }
 
+apply from: 'publishing.gradle'
+
 ext {
     exoPlayerVersion = "2.8.3"
 }
@@ -36,11 +39,10 @@ dependencies {
         // Fix duplicates for KTX dependencies
         exclude group: 'androidx.core', module: 'core'
     }
-    // Photo view
-    implementation project(path: ':photoview')
     // Video player
     implementation "com.google.android.exoplayer:exoplayer-core:$exoPlayerVersion"
     implementation "com.google.android.exoplayer:exoplayer-ui:$exoPlayerVersion"
     // Image loader
     implementation 'com.github.bumptech.glide:glide:4.7.1'
 }
+
